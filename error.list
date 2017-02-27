@@ -1,0 +1,14 @@
+/Library/Python/2.7/site-packages/ipwhois-0.13.0-py2.7.egg/ipwhois/ipwhois.py:72: UserWarning: IPWhois.lookup() has been deprecated and will be removed. You should now use IPWhois.lookup_whois() for legacy whois lookups.
+  warn("IPWhois.lookup() has been deprecated and will be removed. "
+Traceback (most recent call last):
+  File "./instarecon.py", line 1027, in <module>
+    scan.scan_targets()
+  File "./instarecon.py", line 829, in scan_targets
+    self.full_scan_on_host(target)
+  File "./instarecon.py", line 892, in full_scan_on_host
+    m = host.print_all_whois_ip()
+  File "./instarecon.py", line 456, in print_all_whois_ip
+    ret = set([ip.print_whois_ip() for ip in self.ips if ip.whois_ip])
+  File "./instarecon.py", line 695, in print_whois_ip
+    if net['abuse_emails']:
+KeyError: 'abuse_emails'
